@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Catur VS Bot</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=yes">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="lib/chessboardjs/css/chessboard-0.3.0.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav role="navigation" class="navbar navbar-inverse navbar-static-top"><div class="navbar-header"><a href="" class="navbar-brand">skakmat.chess</a></div></nav>
+<div class="container">
+	<h3 style="margin-top: -8px"> VS Bot (New Design)</h3>
+	<p> <b>Tekan dan seret</b> untuk bergerak. </p>
+	<div id="board" class="board" style="height: auto; max-width: 95%;"></div>
+
+		<br>
+		Gaya bermain bot:
+		<select id="search-depth" class="form-control" style="margin-bottom: 3px;">
+			<option value="1">1 (Faiz style)</option>
+			<option value="2">2 (Aqqil style)</option>
+			<option value="3" selected>3 (Alvis style)</option>
+			<option value="4">4 (Slow! Arya style)</option>
+		</select>
+		<span>Waktu berpikir bot: <span id="time"></span></span>
+		<br>
+		<div style="width:0px; height:0px;">
+		</div>
+		<div id="move-history" class="move-history" style="width:0px; height:0px;">
+		</div>
+</div>
+<script src="lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="lib/chessboardjs/js/chess.js"></script>
+<script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
+<script src="script.js"></script>
+<script>
+
+</script>
+</body>
+</html>
